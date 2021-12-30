@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+    <meta charset="UTF-8">
+    <title>海丝之路小游戏</title>
+    <style type="text/css">
+    	*{
+            position: relative;
+            text-align: center;
+        }
+
+        .barDiv
+        {
+        	margin-top: 70%;
+            width: 300px;
+        }
+        .bar
+        {
+        	margin-top: 50%;
+        	margin-left: 16%;
+            position: relative;
+            background-color: #DDDDDD;
+            width: 300px;
+            height: 50px;
+            top:17px;
+        }
+        #greenBar
+        {
+            width: 0%;
+            height: 50px;
+            transition: all 10s ease;
+            text-align: center;
+            animation: ;
+        }
+
+        #msg_div{
+        	margin-top: 10px;
+            height: 80px;
+            text-align: center;
+        }
+        #box_div{
+            height: 50px;
+            text-align: center;
+        }
+        #img1{
+            animation: action 1s linear infinite;
+        }
+        @keyframes action {
+            25%{opacity: 0.5}
+            50%{opacity: 0.1}
+            75%{opacity: 0.5}
+            100%{opacity: 0.9}
+
+        }
+
+    </style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+        	$("#greenBar").css("background-color"," #64BD2E");
+        	$("#greenBar").css("width"," 100%");
+        })
+        $(document).ready(function(){
+          setTimeout("javascript:location.href='main.html'",12000);
+      });
+        
+        
+    </script>
+
+</head>
+<body>
+
+
+
+
+    <div class="barDiv">
+
+        <div class="bar">
+            <div id="greenBar" >
+                <img id = "img1" src="res/rw.png" width="50" height="50">
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
